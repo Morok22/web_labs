@@ -150,6 +150,29 @@ th {
     background-color: #919191 !important;
 }
 
+/*Reviews Page Content*/
+
+.user_name {
+    margin-right: 10%;
+    display: inline-block;
+}
+
+.review_post_time {
+    display: inline-block;
+}
+
+.review_text {
+    font-size: 130%;
+}
+
+label {
+    font-size: 140%;
+}
+
+.review_textarea {
+    background-color: #d6d6d6;
+}
+
 /*Footer*/
 
 .footer {

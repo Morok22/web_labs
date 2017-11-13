@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>thenewboston</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <img class="hamburger_icon" src="../img/hamburger.png" alt="hamburger icon">
+            </button>
+            <a class="navbar-brand" href="#">nulp</a>
+        </div>
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hover_border"><a href="main_page.html">Головна</a></li>
+                <li class="active"><a href="#">Новини</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам</a>
+                  <ul id="products-menu" class="dropdown-menu clearfix centered" role="menu">
+                    <li><a href="">Програма</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Лабораторні</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Література</a></li>
+                  </ul>
+                </li>
+                <li class="hover_border"><a href="#">Відгуки</a></li>
+                <li class="hover_border"><a href="#">Контакти</a></li>
+                <li class="hover_border"><a href="#">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content --> 
+
+<div class="content reviews_page">
+    <div class="content_wrapper">
+        <div class="review divider_bottom">    
+            <div class="user_name"><h1>Вася Пупкін</h1></div>
+            <div class="review_post_time"><h4>11.11.2017, 14:00</h4></div>
+            <div class="review_text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur totam molestiae velit dolorem, dolorum ipsum optio illum asperiores iure, adipisci, consequuntur culpa. Repellat delectus eius, illo cum pariatur vero assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex praesentium, reprehenderit tempore porro natus similique velit. Voluptas facilis distinctio cumque! Blanditiis eius, est neque, omnis voluptatem consectetur qui numquam nam.</p>   
+            </div>
+        </div>
+        <div class="review">    
+            <div class="user_name"><h1>Вася Пупкін</h1></div>
+            <div class="review_post_time"><h4>11.11.2017, 14:00</h4></div>
+            <div class="review_text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur totam molestiae velit dolorem, dolorum ipsum optio illum asperiores iure, adipisci, consequuntur culpa. Repellat delectus eius, illo cum pariatur vero assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex praesentium, reprehenderit tempore porro natus similique velit. Voluptas facilis distinctio cumque! Blanditiis eius, est neque, omnis voluptatem consectetur qui numquam nam.</p>   
+            </div>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="send_review">Залишити відгук:</label>
+                <textarea class="form-control review_textarea" rows="10" id="send_review"></textarea>
+            </div>
+            <input type="submit" class="btn" value="Надіслати">
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <div class="footer centered">
+        <p>Bohdan Inc. All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>
