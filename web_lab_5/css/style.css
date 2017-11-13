@@ -127,6 +127,29 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/*Curriculum Page Content*/
+
+td {
+    font-size: 140%;
+}
+
+th {
+    font-size: 160%;
+}
+
+.curriculum_page_content {
+    padding: 20px 0 20px 0;
+}
+
+.table {
+    width: 90%;
+    margin: 0 5% 5% 5%;
+}
+
+.table .hover_tr:hover {
+    background-color: #919191 !important;
+}
+
 /*Footer*/
 
 .footer {
