@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+	background-image: url(../img/NU-LP.jpg);
+	background-size: cover;  
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling;
+
+    margin-top: 70px;
+}
+
+/*Text Custom*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
+}
+
+p {
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.centered {
+	text-align: center;
+}
+
+a {
+	color: #727171 !important;
+}
+
+/*Naviganiton Menu*/
+
+.navbar-brand {
+	font-weight: 200;
+	font-size: 25px;
+	color: #297c77 !important;
+}
+
+.navbar-inverse .navbar-nav a:hover {
+	color: #297c77 !important;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #297c77;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.navbar {
+	animation-name: slide;
+	animation-duration: 2s;
+	font-weight: 400;
+	font-size: 23px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.navbar-inverse {
+	background: #c9c9c9;
+	border-color: #c9c9c9;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+	background-color: #c9c9c9;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover, a:focus{
+	background-color: #c9c9c9;
+}
+
+/*Content Custom*/
+
+.content {
+	margin: 230px 0 0px 0;
+	padding: 10px 0 10px 0;
+	background-color: #c9c9c9;					
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+
+.content > h1 {
+	font-size: 15px;
+}
+
+.news {
+	background-color: #c9c9c9;
+	border-top-style: solid;
+	border-color: #727171;
+	border-top-width: 2px;					
+}
+
+.table {
+	background-color: #e0e0e0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 0 20px 20px 20px;
+}
+
+.last_news_title {
+	margin: 40px 0 40px 0;
+}
+
+.big_title {
+	font-size: 50px;
+}
+
+/*News Page*/
+
+.news_table {
+	padding: 12px;
+}
+
+.news_table > h1 {
+	font-size: 2px !important;
+}
+
+.news_page {
+	padding: 15px;
+}
+
+/*Footer*/
+
+
+.footer {
+	background-color: #636363;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.footer .container > p {
+	margin-top: 10px;
+	color: #303030 !important;
+}
+
+/*Animations*/
+
+@keyframes slide {
+	from {
+		opacity: 0;
+		margin-top: -70px;
+	}
+	to {
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
