@@ -20,6 +20,10 @@
     border-width: 2px;
 }
 
+a.disabled {
+    pointer-events: none; /* делаем ссылку некликабельной */
+}
+
 /*Body*/
 
 body {
@@ -35,6 +39,30 @@ body {
 }
 
 /*Navigation Bar*/
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #444444;
+}
+
+.collapsing .dropdown .dropdown-menu {
+    left: 0 !important;
+    width: 100%;
+}
+
+.in .dropdown .dropdown-menu {
+    left: 0 !important;
+    width: 100%;
+}
+
+.fixed-top .navbar-collapse {
+    max-height: 380px; 
+}
+
+.in,.collapsing {
+    margin-top: -1.2%;
+    text-align: center;
+    background-color: #3e3e3e; 
+}
 
 .hamburger_icon {
     height: 20px;
@@ -75,7 +103,7 @@ body {
 }
 
 .navbar .container-fluid .navbar-collapse .dropdown-menu {
-    left: -30px;
+    left: -34px;
     border-top-style: none;
     background-color: #3e3e3e;
     box-shadow: none;
@@ -179,11 +207,13 @@ label {
     font-size: 140%;
 }
 
-.review_textarea {
-    background-color: #d6d6d6;
-}
-
 /*Admin Page*/
+
+.fileinput {
+    margin-bottom: 9px;
+    display: inline-block;
+    width: 100%;
+}
 
 .admin_page_uppload_news {
     padding-bottom: 2%;
