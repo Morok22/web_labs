@@ -173,6 +173,13 @@ label {
     background-color: #d6d6d6;
 }
 
+/*Admin Page*/
+
+.upploaded_image {
+    height: 200px;
+    width: 200px;
+}
+
 /*Footer*/
 
 .footer {
