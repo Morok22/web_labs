@@ -1,0 +1,23 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+pages/admin_page.html
+pages/curriculum_page.html
+pages/reviews_page.html
+pages/news_page.html
+img/hamburger.png
+img/news_image_1.jpg
+img/news_image_2.jpg
+img/news_image_3.jpg
+img/NU-LP.jpg
+css/style.css
+
+
+css/bootstrap.min.css
+js/bootstrap.min.js
+js/jasny-bootstrap.min.js
+js/jquery.min.js
+
+FALLBACK:
+. pages/error.html	

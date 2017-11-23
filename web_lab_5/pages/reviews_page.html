@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<html manifest="/manifest.appcache">
+<html manifest="../manifest.appcache">
 <head>
     <title>NULP</title>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/jasny-bootstrap.min.css"></link>
     <script src="../js/jasny-bootstrap.min.js"></script>
-    <script src="../js/my.js"></script>
+    <script src="../js/review.js"></script>
 </head>
 <body>
 
@@ -29,7 +29,7 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hover_border"><a href="index.html">Головна</a></li>
+                <li class="hover_border"><a href="../index.html">Головна</a></li>
                 <li class="hover_border"><a href="news_page.html">Новини</a></li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Студентам</a>
                   <ul id="products-menu" class="dropdown-menu clearfix centered" role="menu">
@@ -51,14 +51,14 @@
 <div class="content reviews_page">
     <div class="content_wrapper">
         <div class="reviews" id="reviews">
-            <div class="review divider_bottom">    
+            <div class="review divider_bottom" data-divid="divId_0">    
                 <div class="user_name"><h1>Вася Пупкін</h1></div>
                 <div class="review_post_time"><h4>11.11.2017, 14:00</h4></div>
                 <div class="review_text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur totam molestiae velit dolorem, dolorum ipsum optio illum asperiores iure, adipisci, consequuntur culpa. Repellat delectus eius, illo cum pariatur vero assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex praesentium, reprehenderit tempore porro natus similique velit. Voluptas facilis distinctio cumque! Blanditiis eius, est neque, omnis voluptatem consectetur qui numquam nam.</p>   
                 </div>
             </div>
-            <div class="review divider_bottom">    
+            <div class="review divider_bottom" data-divid="divId_1">    
                 <div class="user_name"><h1>Вася Пупкін</h1></div>
                 <div class="review_post_time"><h4>11.11.2017, 14:00</h4></div>
                 <div class="review_text">
@@ -69,11 +69,11 @@
         <form action="">
             <div class="form-group" id="review_inputs">
                 <label for="send_review">Залишити відгук:</label>
-                <input type="text" class="form-control" id="send_user_name" placeholder="Ваше ім'я та прізвище" required pattern="^[А-Яа-яЁё\s]+$" maxlength="5">
+                <input type="text" class="form-control" id="send_user_name" placeholder="Ваше ім'я та прізвище" required pattern="^[А-Яа-яЁё\s]+$" maxlength="20">
                 <br>
                 <textarea class="form-control review_textarea" rows="10" id="send_review" placeholder="Ваш відгук" required></textarea>
             </div>
-            <input class="btn btn-primary" id="send_review_button" value="Надіслати"></input>
+            <input class="btn btn-primary" id="send_review_button" value="Надіслати" onclick="sendReview()"></input>
         </form>
     </div>
 </div>
